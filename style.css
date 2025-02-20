@@ -21,6 +21,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.6s ease-out forwards;
 }
 
 nav a {
@@ -55,6 +58,9 @@ nav a {
   width: 800px;
   bottom: 0px;
   left: 30px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 0.8s 1s ease-out forwards;
 }
 .bloc h1 {
   font-size: 120px;
@@ -64,14 +70,38 @@ nav a {
   margin-bottom: 20px;
 }
 
+.bloc h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.bloc h1 span:nth-child(1) {
+  animation: apparition 0.8s 0.2s ease-out forwards;
+}
+
+.bloc h1 span:nth-child(2) {
+  animation: apparition 0.8s 0.4s ease-out forwards;
+}
+
+.bloc h1 span:nth-child(3) {
+  animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
 .bloc p {
   font-size: 25px;
   position: relative;
   left: 10px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.7s ease-out forwards;
 }
 
 .box-btn {
   margin-top: 100px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.8s ease-out forwards;
 }
 
 .box-btn button {
